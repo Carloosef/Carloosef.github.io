@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Site ATividade</title>
+    <style>
+        body {
+            background-color: #d9f0f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #005f5f;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #008080;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #a9dcd6;
+        }
+
+        button {
+            background-color: #007878;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005f5f;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Olá, eu sou Carlos</h1>
+    <p>
+        Sou estudante de desenvolvimento de software e gosto de aprender sobre novas tecnologias.
+        Tenho interesse por música, tecnologias e programação, futuramente pretendo cursar fullstack.
+    </p>
+
+    <ul style="text-align: left; display: inline-block;">
+        <li>Escutar Música</li>
+        <li>Programar</li>
+        <li>Jogar Videogame</li>
+    </ul>
+
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSM-JXxuogVlvaWM4Hamjf44EW793oiR5xg&s" alt="Imagem dos hobbies" width="100">
+
+    <table>
+        <tr>
+            <th>Países</th>
+            <th>Imagem</th>
+        </tr>
+        <tr>
+            <td>Japão</td>
+            <td><img src="https://flagcdn.com/w320/jp.png" alt="Japão" width="100"></td>
+        </tr>
+        <tr>
+            <td>Canadá</td>
+            <td><img src="https://flagcdn.com/w320/ca.png" alt="Canadá" width="100"></td>
+        </tr>
+        <tr>
+            <td>Itália</td>
+            <td><img src="https://flagcdn.com/w320/it.png" alt="Itália" width="100"></td>
+        </tr>
+    </table>
+
+    <div class="center-content">
+        <p><strong>Acesse uma página que gosto</strong></p>
+        <a href="https://www.kabum.com.br/" target="_blank">Kabum</a>
+        <button onclick="mostrarMensagem()"> Botão de interação</button>
+        <p id="mensagem"></p>
+    </div>
+
+    <p><strong> Site pra Atividade Uninter</strong></p>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Todo grande sistema começa com a primeira linha de código — e toda jornada começa com a coragem de começar.";
+        }
+    </script>
+
+</body>
+</html>
